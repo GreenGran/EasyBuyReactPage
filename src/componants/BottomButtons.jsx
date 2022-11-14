@@ -30,6 +30,7 @@ function BottomButtons() {
       <Button style={{borderRadius: 20,fontSize: "large",fontWeight: "bold",color:"black", margin:"0"}} startIcon={<NavigateBeforeIcon  style={{ color: 'Black', borderRadius : "0",float:"top"}}/>}>עמוד קודם</Button>
        
         <Button style={{borderRadius: 20,fontSize: "large",fontWeight: "bold",color:"black", margin:"0"}}  >עמוד ראשון</Button>
+        <p style={{fontSize: "large",fontWeight: "bold",color:"black", margin:"0"}}>  עמוד מספר <span style={{fontSize: "x-large",fontWeight: "bold",color:"black", margin:"0"}}>1</span></p>
         <Button  style={{borderRadius: 20,fontSize: "large",fontWeight: "bold",color:"black", margin:"0"}} >עמוד אחרון</Button>
        
         <Button style={{borderRadius: 20,fontSize: "large",fontWeight: "bold",color:"black", margin:"0"}}  endIcon={<NavigateNextIcon  style={{ color: 'Black', borderRadius : "0",float:"top"}}/>}>עמוד הבא</Button>
