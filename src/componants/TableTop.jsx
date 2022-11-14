@@ -35,7 +35,7 @@ function TableTop() {
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >מספר</Item>
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
-    <Item  style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}}  >מחיקת </Item>
+    <Item  style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}}  >מחיקה </Item>
   </Grid>
 </Grid>
       </div>

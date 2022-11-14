@@ -97,7 +97,7 @@ function TableItem(props) {
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >
-    <Button   disabled={props.status === "0" ? true : false} startIcon={<BackspaceIcon  style={{ color: 'Black', borderRadius : "0"}}/>} style={{paddingRight:"0",backgroundColor:props.status === "0" ? "#808080" : "#EF4B4B",height:"100%",width:"100%",borderRadius : "0"}}>
+    <Button   disabled={props.status > "1" ? true : false} startIcon={<BackspaceIcon  style={{ color: 'Black', borderRadius : "0"}}/>} style={{paddingRight:"0",backgroundColor:props.status > "1" ? "#808080" : "#EF4B4B",height:"100%",width:"100%",borderRadius : "0"}}>
       </Button>
 </Item>
   </Grid>
