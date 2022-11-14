@@ -1,23 +1,17 @@
-import logo from './logo.svg';
+
+import DemandTable from './componants/DemandTable';
 import './App.css';
+import TopContainer from './componants/TopContainer';
+import HistoryToggle from './componants/HistoryToggle';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App" >
+    <TopContainer/>
+    <HistoryToggle/>
+    <DemandTable/>
+    
     </div>
   );
 }
