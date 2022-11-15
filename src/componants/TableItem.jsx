@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { styled } from '@mui/material/styles';
-import Box from '@mui/material/Box';
+
 import Paper from '@mui/material/Paper';
 import Grid from '@mui/material/Grid';
 import Button from '@mui/material/Button';
@@ -84,12 +84,15 @@ function TableItem(props) {
      </Item>
   </Grid>
   <Grid item xs={2} style={{paddingLeft : 0}}>
+    <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >{props.confirmationNum}</Item>
+  </Grid>
+  <Grid item xs={2} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >{props.price}</Item>
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >{props.amount}</Item>
   </Grid>
-  <Grid item xs={5} style={{paddingLeft : 0}}>
+  <Grid item xs={3} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >{props.desc}</Item>
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
@@ -97,7 +100,7 @@ function TableItem(props) {
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >
-    <Button   disabled={props.status > "1" ? true : false} startIcon={<BackspaceIcon  style={{ color: 'Black', borderRadius : "0"}}/>} style={{paddingRight:"0",backgroundColor:props.status > "1" ? "#808080" : "#EF4B4B",height:"100%",width:"100%",borderRadius : "0"}}>
+    <Button   disabled={props.status === "1" ? false : true} startIcon={<BackspaceIcon  style={{ color: 'Black', borderRadius : "0"}}/>} style={{paddingRight:"0",backgroundColor:props.status === "1" ? "#EF4B4B" : "#808080",height:"100%",width:"100%",borderRadius : "0"}}>
       </Button>
 </Item>
   </Grid>

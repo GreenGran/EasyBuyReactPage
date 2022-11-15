@@ -9,6 +9,7 @@ import BottomButtons from './BottomButtons';
 const DBarry = [{  // in the product the info will be pulled from the DB
     status : "1",
     price : "10₪",
+    confirmationNum : "",
     amount : "20",
     desc : "עטים",
     num : "1",
@@ -16,6 +17,7 @@ const DBarry = [{  // in the product the info will be pulled from the DB
 {
     status : "2",
     price : "400₪",
+    confirmationNum : "2352458462DA",
     amount : "1",
     desc : "מיקרוגל",
     num : "2",
@@ -23,6 +25,7 @@ const DBarry = [{  // in the product the info will be pulled from the DB
 {
     status : "4",
     price : "4000₪",
+    confirmationNum : "",
     amount : "10",
     desc : "כיסאות משרד",
     num : "3",
@@ -37,6 +40,7 @@ function arrayLowerThenTen(arry){
                 {
                     status : "0",
                     price : "",
+                    confirmationNum : "",
                     amount : "",
                     desc : "",
                     num : i+1,
@@ -68,7 +72,8 @@ function DemandTable() {
                             price = {elements.price}
                             amount = {elements.amount}
                             desc = {elements.desc}
-                            num = {elements.num}    />
+                            num = {elements.num}   
+                            confirmationNum ={elements.confirmationNum} />
                )
             })
             

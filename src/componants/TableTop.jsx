@@ -23,12 +23,15 @@ function TableTop() {
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >סטטוס</Item>
   </Grid>
   <Grid item xs={2} style={{paddingLeft : 0}}>
+    <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >מספר הזמנה</Item>
+  </Grid>
+  <Grid item xs={2} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >מכיר</Item>
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >כמות</Item>
   </Grid>
-  <Grid item xs={5} style={{paddingLeft : 0}}>
+  <Grid item xs={3} style={{paddingLeft : 0}}>
     <Item style ={{ height: "40px",fontSize: "x-large",fontWeight: "bold"}} >תיאור</Item>
   </Grid>
   <Grid item xs={1} style={{paddingLeft : 0}}>
